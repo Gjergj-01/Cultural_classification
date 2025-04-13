@@ -1,0 +1,103 @@
+    SELECT ?originLabel ?cultureLabel ?ethnic_groupLabel ?off_languageLabel
+            ?nameLabel ?movementLabel ?genreLabel ?main_subjectLabel
+            ?memorializedLabel ?sign_eventLabel ?narrative_locLabel ?countryLabel
+            ?taxonLabel ?jurisdictionLabel ?based_onLabel ?part_ofLabel
+            ?native_labelLabel ?cuisineLabel ?areaLabel ?used_byLabel
+            ?useLabel ?political_ideoLabel ?religionLabel ?political_partyLabel 
+            ?participant_inLabel ?endemicLabel ?indigenousLabel 
+            ?country_sportLabel ?subclass_ofLabel
+    WHERE {
+        OPTIONAL { wd:Q177 wdt:P495 ?origin .}
+        OPTIONAL { wd:Q177 wdt:P2596 ?culture .}
+        OPTIONAL { wd:Q177 wdt:P172 ?ethnic_group .}
+        OPTIONAL { wd:Q177 wdt:P37 ?off_language .}
+        OPTIONAL { wd:Q177 wdt:P407 ?name .}
+        OPTIONAL { wd:Q177 wdt:P135 ?movement .}
+        OPTIONAL { wd:Q177 wdt:P136 ?genre .}
+        OPTIONAL { wd:Q177 wdt:P921 ?main_subject .}
+        OPTIONAL { wd:Q177 wdt:P547 ?memorialized .}
+        OPTIONAL { wd:Q177 wdt:P793 ?sign_event .}
+        OPTIONAL { wd:Q177 wdt:P840 ?narrative_loc .}
+        OPTIONAL { wd:Q177 wdt:P17 ?country .}
+        OPTIONAL { wd:Q177 wdt:P1843 ?taxon .}
+        OPTIONAL { wd:Q177 wdt:P1001 ?jurisdiction .}
+        OPTIONAL { wd:Q177 wdt:P144 ?based_on .}
+        OPTIONAL { wd:Q177 wdt:P361 ?part_of .}
+        OPTIONAL { wd:Q177 wdt:P1705 ?native_label .}
+        OPTIONAL { wd:Q177 wdt:P2012 ?cuisine .}
+        OPTIONAL { wd:Q177 wdt:P2541 ?area .}
+        OPTIONAL { wd:Q177 wdt:P1535 ?used_by .}
+        OPTIONAL { wd:Q177 wdt:P366 ?use .}
+        OPTIONAL { wd:Q177 wdt:P1142 ?political_ideo .}
+        OPTIONAL { wd:Q177 wdt:P140 ?religion .}
+        OPTIONAL { wd:Q177 wdt:P102 ?political_party .}
+        OPTIONAL { wd:Q177 wdt:P1344 ?participant_in .}
+        OPTIONAL { wd:Q177 wdt:P183 ?endemic .}
+        OPTIONAL { wd:Q177 wdt:P2341 ?indigenous .}
+        OPTIONAL { wd:Q177 wdt:P1532 ?country_sport .}
+        OPTIONAL { wd:Q177 wdt:P279 ?subclass_of .}      
+
+        SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en". }
+
+    }
+
+    LIMIT 1
+
+
+
+
+#######################################
+    FORMATED QUERY
+#######################################
+
+def retrieve_info(items):
+    for item in items:
+        sparql.setQuery(
+            f'''
+            SELECT ?originLabel ?cultureLabel ?ethnic_groupLabel ?off_languageLabel
+                    ?nameLabel ?movementLabel ?genreLabel ?main_subjectLabel
+                    ?memorializedLabel ?sign_eventLabel ?narrative_locLabel ?countryLabel
+                    ?taxonLabel ?jurisdictionLabel ?based_onLabel ?part_ofLabel
+                    ?native_labelLabel ?cuisineLabel ?areaLabel ?used_byLabel
+                    ?useLabel ?political_ideoLabel ?religionLabel ?political_partyLabel 
+                    ?participant_inLabel ?endemicLabel ?indigenousLabel 
+                    ?country_sportLabel ?subclass_ofLabel
+            WHERE {{
+                OPTIONAL {{ wd:{item} wdt:P495 ?origin .}}  
+                OPTIONAL {{ wd:{item} wdt:P2596 ?culture .}}
+                OPTIONAL {{ wd:{item} wdt:P172 ?ethnic_group .}}
+                OPTIONAL {{ wd:{item} wdt:P37 ?off_language .}}
+                OPTIONAL {{ wd:{item} wdt:P407 ?name .}}
+                OPTIONAL {{ wd:{item} wdt:P135 ?movement .}}
+                OPTIONAL {{ wd:{item} wdt:P136 ?genre .}}
+                OPTIONAL {{ wd:{item} wdt:P921 ?main_subject .}}
+                OPTIONAL {{ wd:{item} wdt:P547 ?memorialized .}}
+                OPTIONAL {{ wd:{item} wdt:P793 ?sign_event .}}
+                OPTIONAL {{ wd:{item} wdt:P840 ?narrative_loc .}}
+                OPTIONAL {{ wd:{item} wdt:P17 ?country .}}
+                OPTIONAL {{ wd:{item} wdt:P1843 ?taxon .}}
+                OPTIONAL {{ wd:{item} wdt:P1001 ?jurisdiction .}}
+                OPTIONAL {{ wd:{item} wdt:P144 ?based_on .}}
+                OPTIONAL {{ wd:{item} wdt:P361 ?part_of .}}
+                OPTIONAL {{ wd:{item} wdt:P1705 ?native_label .}}
+                OPTIONAL {{ wd:{item} wdt:P2012 ?cuisine .}}
+                OPTIONAL {{ wd:{item} wdt:P2541 ?area .}}
+                OPTIONAL {{ wd:{item} wdt:P1535 ?used_by .}}
+                OPTIONAL {{ wd:{item} wdt:P366 ?use .}}
+                OPTIONAL {{ wd:{item} wdt:P1142 ?political_ideo .}}
+                OPTIONAL {{ wd:{item} wdt:P140 ?religion .}}
+                OPTIONAL {{ wd:{item} wdt:P102 ?political_party .}}
+                OPTIONAL {{ wd:{item} wdt:P1344 ?participant_in .}}
+                OPTIONAL {{ wd:{item} wdt:P183 ?endemic .}}
+                OPTIONAL {{ wd:{item} wdt:P2341 ?indigenous .}}
+                OPTIONAL {{ wd:{item} wdt:P1532 ?country_sport .}}
+                OPTIONAL {{ wd:{item} wdt:P279 ?subclass_of .}}        
+
+                SERVICE wikibase:label {{ bd:serviceParam wikibase:language "[AUTO_LANGUAGE],mul,en". }}
+
+            }}
+
+            LIMIT 1
+        '''
+        )
+    
