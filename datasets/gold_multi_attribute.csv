@@ -1,301 +1,301 @@
 ,countryLabel,subclass_ofLabel
-0,Germany,None
-1,United Kingdom,None
-2,None,None
-3,None,None
-4,None,None
-5,Switzerland,None
+0,Germany,0
+1,United Kingdom,0
+2,0,0
+3,0,0
+4,0,0
+5,Switzerland,0
 6,Iraq,traditional costume
-7,Mexico,None
-8,None,None
-9,None,American literature
-10,None,transport
-11,None,vehicle
-12,None,nonwoven fabric
+7,Mexico,0
+8,0,0
+9,0,American literature
+10,0,transport
+11,0,vehicle
+12,0,nonwoven fabric
 13,Spain,home
-14,None,None
-15,None,None
-16,None,None
-17,None,None
-18,None,Plantae
-19,None,audiovisual work
-20,United States,None
-21,None,alcoholic beverage
+14,0,0
+15,0,0
+16,0,0
+17,0,0
+18,0,Plantae
+19,0,audiovisual work
+20,United States,0
+21,0,alcoholic beverage
 22,Italy,apéritif
-23,None,visual arts
-24,None,None
-25,None,designer
-26,None,architect
-27,None,cooking oil
-28,None,historian
-29,None,visual arts
-30,None,irreligion
-31,None,None
-32,Switzerland,None
+23,0,visual arts
+24,0,0
+25,0,designer
+26,0,architect
+27,0,cooking oil
+28,0,historian
+29,0,visual arts
+30,0,irreligion
+31,0,0
+32,Switzerland,0
 33,Lithuania,music festival
-34,None,drum
-35,Germany,None
-36,Switzerland,None
-37,Switzerland,None
-38,Germany,None
-39,None,None
-40,Italy,None
-41,None,two-wheeler
-42,None,Animalia
-43,None,None
-44,None,political party
-45,None,None
-46,United States,None
-47,None,artist
-48,None,cotton fabric
-49,None,monarch
-50,None,city
-51,None,athlete
-52,None,tied shoe
-53,None,None
-54,None,Plantae
-55,None,poetry
-56,Germany,None
-57,France,None
-58,Bangladesh,None
-59,None,None
-60,None,artist
-61,None,woodwind instrument player
-62,Germany,None
-63,Spain,None
-64,United States,None
-65,None,actor
-66,None,None
-67,None,political party
-68,None,magazine
-69,None,author
-70,None,musician
-71,None,ritual
-72,None,comics
-73,None,walking stick
-74,None,architectural element
-75,United States,None
-76,Cuba,None
-77,None,Animalia
-78,People's Republic of China,None
-79,None,government
-80,None,None
-81,None,performing arts
-82,None,None
-83,None,None
-84,None,loincloth
-85,None,Animalia
-86,None,None
-87,None,musician
-88,None,None
-89,None,percussionist
-90,Switzerland,None
-91,None,historian
-92,None,None
-93,Switzerland,None
-94,None,None
-95,None,philosophy
-96,None,documentary film
-97,None,mores
-98,None,None
-99,None,comics
-100,None,political party
-101,None,None
-102,None,actor
-103,None,folk tale
-104,None,mirabilia
-105,None,folk dance
-106,None,coffee drink
-107,None,tradition
-108,None,None
-109,None,None
-110,None,None
-111,France,None
-112,None,organism
-113,United States,None
-114,None,woven fabric
-115,Switzerland,None
-116,None,non-fiction writer
-117,None,None
-118,None,None
-119,None,athlete
-120,None,sports equipment
-121,None,designer
-122,None,ritual
-123,None,burger
-124,None,Reform Architecture
-125,Germany,None
-126,None,kohen
-127,United Kingdom,None
-128,None,None
-129,South Korea,None
-130,None,painting
-131,Canada,None
+34,0,drum
+35,Germany,0
+36,Switzerland,0
+37,Switzerland,0
+38,Germany,0
+39,0,0
+40,Italy,0
+41,0,two-wheeler
+42,0,Animalia
+43,0,0
+44,0,political party
+45,0,0
+46,United States,0
+47,0,artist
+48,0,cotton fabric
+49,0,monarch
+50,0,city
+51,0,athlete
+52,0,tied shoe
+53,0,0
+54,0,Plantae
+55,0,poetry
+56,Germany,0
+57,France,0
+58,Bangladesh,0
+59,0,0
+60,0,artist
+61,0,woodwind instrument player
+62,Germany,0
+63,Spain,0
+64,United States,0
+65,0,actor
+66,0,0
+67,0,political party
+68,0,magazine
+69,0,author
+70,0,musician
+71,0,ritual
+72,0,comics
+73,0,walking stick
+74,0,architectural element
+75,United States,0
+76,Cuba,0
+77,0,Animalia
+78,People's Republic of China,0
+79,0,government
+80,0,0
+81,0,performing arts
+82,0,0
+83,0,0
+84,0,loincloth
+85,0,Animalia
+86,0,0
+87,0,musician
+88,0,0
+89,0,percussionist
+90,Switzerland,0
+91,0,historian
+92,0,0
+93,Switzerland,0
+94,0,0
+95,0,philosophy
+96,0,documentary film
+97,0,mores
+98,0,0
+99,0,comics
+100,0,political party
+101,0,0
+102,0,actor
+103,0,folk tale
+104,0,mirabilia
+105,0,folk dance
+106,0,coffee drink
+107,0,tradition
+108,0,0
+109,0,0
+110,0,0
+111,France,0
+112,0,organism
+113,United States,0
+114,0,woven fabric
+115,Switzerland,0
+116,0,non-fiction writer
+117,0,0
+118,0,0
+119,0,athlete
+120,0,sports equipment
+121,0,designer
+122,0,ritual
+123,0,burger
+124,0,Reform Architecture
+125,Germany,0
+126,0,kohen
+127,United Kingdom,0
+128,0,0
+129,South Korea,0
+130,0,painting
+131,Canada,0
 132,Germany,city
-133,None,None
-134,None,philosopher
-135,None,None
-136,None,poetry
-137,None,None
-138,None,visual arts
-139,None,supporter
-140,None,None
-141,None,Art Nouveau
-142,None,None
-143,None,None
-144,None,philosopher
-145,None,None
-146,None,None
-147,None,None
-148,South Korea,None
+133,0,0
+134,0,philosopher
+135,0,0
+136,0,poetry
+137,0,0
+138,0,visual arts
+139,0,supporter
+140,0,0
+141,0,Art Nouveau
+142,0,0
+143,0,0
+144,0,philosopher
+145,0,0
+146,0,0
+147,0,0
+148,South Korea,0
 149,France,food
-150,None,liturgical book
-151,None,None
-152,None,None
-153,None,None
-154,None,None
-155,None,historian
-156,United Kingdom,None
-157,None,poetry
-158,None,Sunni Islam
+150,0,liturgical book
+151,0,0
+152,0,0
+153,0,0
+154,0,0
+155,0,historian
+156,United Kingdom,0
+157,0,poetry
+158,0,Sunni Islam
 159,Japan,comics
-160,None,religion
-161,None,drawing
-162,None,None
-163,None,art
-164,None,architect
-165,None,monument
-166,Syria,None
-167,None,ritual
-168,Russia,None
-169,None,dance
+160,0,religion
+161,0,drawing
+162,0,0
+163,0,art
+164,0,architect
+165,0,monument
+166,Syria,0
+167,0,ritual
+168,Russia,0
+169,0,dance
 170,Bolivia,Mennonites
-171,None,None
-172,None,environment
-173,Turkey,None
-174,None,None
-175,None,None
-176,None,None
-177,None,None
-178,None,building
-179,None,actor
+171,0,0
+172,0,environment
+173,Turkey,0
+174,0,0
+175,0,0
+176,0,0
+177,0,0
+178,0,building
+179,0,actor
 180,Israel,Judaism
-181,None,None
-182,None,None
-183,None,mountain
-184,France,None
-185,None,play
-186,None,None
-187,None,baroque architecture
+181,0,0
+182,0,0
+183,0,mountain
+184,France,0
+185,0,play
+186,0,0
+187,0,baroque architecture
 188,Poland,music festival
-189,None,None
+189,0,0
 190,United States,literary award
-191,United States,None
-192,None,magazine
-193,United States,None
-194,None,head movements
-195,None,exploitation film
-196,None,None
-197,None,cross-gender acting
-198,None,classical music
+191,United States,0
+192,0,magazine
+193,United States,0
+194,0,head movements
+195,0,exploitation film
+196,0,0
+197,0,cross-gender acting
+198,0,classical music
 199,Italy,marionette theatre
-200,None,manga
-201,None,policy
-202,None,fish
-203,None,religion
-204,None,animation
-205,Mexico,None
-206,None,philosophy
-207,None,None
-208,None,None
-209,None,None
-210,None,philosophy
-211,None,physician
-212,None,keyboardist
-213,None,None
-214,Canada,None
-215,None,tree
-216,United States,None
-217,None,stop-motion
-218,None,organism
-219,None,None
+200,0,manga
+201,0,policy
+202,0,fish
+203,0,religion
+204,0,animation
+205,Mexico,0
+206,0,philosophy
+207,0,0
+208,0,0
+209,0,0
+210,0,philosophy
+211,0,physician
+212,0,keyboardist
+213,0,0
+214,Canada,0
+215,0,tree
+216,United States,0
+217,0,stop-motion
+218,0,organism
+219,0,0
 220,Vatican City,monarch
-221,None,writing style
-222,None,head of state
-223,Kosovo,None
-224,None,organism
-225,None,building
-226,None,tree
-227,None,None
-228,None,None
-229,None,building
-230,Switzerland,None
-231,None,folk dance
-232,Switzerland,None
-233,None,city
-234,Spain,None
+221,0,writing style
+222,0,head of state
+223,Kosovo,0
+224,0,organism
+225,0,building
+226,0,tree
+227,0,0
+228,0,0
+229,0,building
+230,Switzerland,0
+231,0,folk dance
+232,Switzerland,0
+233,0,city
+234,Spain,0
 235,India,literary award
-236,France,None
-237,None,hardwood
-238,None,Plantae
-239,None,manga
+236,France,0
+237,0,hardwood
+238,0,Plantae
+239,0,manga
 240,Japan,literary award
-241,None,None
-242,France,None
-243,None,fish
-244,None,lumber
-245,United Kingdom,None
-246,None,manga
-247,United States,None
-248,None,None
-249,Russia,None
-250,None,None
-251,None,None
-252,None,sports equipment
-253,None,publisher
-254,None,costume accessory
-255,None,publisher
-256,None,dance
-257,United States,None
-258,South Korea,None
-259,None,psychedelic rock
-260,Czech Republic,None
-261,France,None
-262,Japan,None
-263,None,actor
-264,None,river
-265,None,Islamic activity
-266,None,None
-267,None,spice
-268,Tajikistan,None
-269,None,None
-270,None,non-fiction writer
-271,None,writing style
-272,None,body language
-273,None,television
-274,None,None
-275,United Arab Emirates,None
-276,None,river
-277,None,television
-278,None,None
-279,None,magazine
-280,None,animation
-281,None,folk music
-282,None,rolling stock
+241,0,0
+242,France,0
+243,0,fish
+244,0,lumber
+245,United Kingdom,0
+246,0,manga
+247,United States,0
+248,0,0
+249,Russia,0
+250,0,0
+251,0,0
+252,0,sports equipment
+253,0,publisher
+254,0,costume accessory
+255,0,publisher
+256,0,dance
+257,United States,0
+258,South Korea,0
+259,0,psychedelic rock
+260,Czech Republic,0
+261,France,0
+262,Japan,0
+263,0,actor
+264,0,river
+265,0,Islamic activity
+266,0,0
+267,0,spice
+268,Tajikistan,0
+269,0,0
+270,0,non-fiction writer
+271,0,writing style
+272,0,body language
+273,0,television
+274,0,0
+275,United Arab Emirates,0
+276,0,river
+277,0,television
+278,0,0
+279,0,magazine
+280,0,animation
+281,0,folk music
+282,0,rolling stock
 283,Hungary,transport
-284,None,publisher
-285,None,berry
-286,None,None
-287,Italy,None
-288,None,mountain
-289,Germany,None
-290,None,religion
-291,None,pastry
-292,Deutsches Kaiserreich,None
-293,None,environment
-294,None,architectural structure
-295,None,author
-296,Germany,None
+284,0,publisher
+285,0,berry
+286,0,0
+287,Italy,0
+288,0,mountain
+289,Germany,0
+290,0,religion
+291,0,pastry
+292,Deutsches Kaiserreich,0
+293,0,environment
+294,0,architectural structure
+295,0,author
+296,Germany,0
 297,Qing dynasty,politician
-298,None,None
-299,None,None
+298,0,0
+299,0,0
