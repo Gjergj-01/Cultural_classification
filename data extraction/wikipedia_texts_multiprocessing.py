@@ -17,6 +17,7 @@ from itertools import islice
 import ast
 import csv
 from tqdm import tqdm
+from concurrent.futures import ProcessPoolExecutor, as_completed
 
 
 def extract_text(lang, wikipedia_url):
@@ -50,8 +51,6 @@ def extract_text(lang, wikipedia_url):
 def extract_entity_id(url):
     return url.strip().split("/")[-1]
 
-from concurrent.futures import ProcessPoolExecutor, as_completed
-
 def process_entity(row, processed_keywords):
     item = row['entity']
     dict_url = ast.literal_eval(row['lang_url_map'])
@@ -59,7 +58,6 @@ def process_entity(row, processed_keywords):
     if item in processed_keywords:
         return None
 
-    #print(f"⚙️ Processando '{item}'")
     results = [item, ""]
     lang_distribution = []
 
@@ -92,13 +90,9 @@ def save_wikipedia_text_parallel(file_name):
     if os.path.exists(output_file_name):
         existing_df = pd.read_csv(output_file_name)
         processed_keywords = existing_df['entity'].unique().tolist()
-        print(f"🌍 {len(processed_keywords)} keywords già trattate.")
+        print(len(processed_keywords), "keywords già trattate.")
     else:
         processed_keywords = []
-        # Scriviamo l'header se il file non esiste
-        with open(output_file_name, mode='w', newline='', encoding='utf-8') as file:
-            writer = csv.writer(file)
-            writer.writerow(['entity', 'engtext', 'distribution', 'std', 'avg'])
 
     data = pd.read_csv("datasets/" + file_name)
     df = pd.DataFrame(data, columns=['entity', 'lang_url_map'])
@@ -118,7 +112,7 @@ def save_wikipedia_text_parallel(file_name):
                     writer = csv.writer(file)
                     writer.writerow(result)
 
-    print(f"✅ Processamento completato. Risultati salvati in '{output_file_name}'.")
+    print("Processing completato")
 
 
 #entity, engtext, distribution, std, avg

@@ -27,7 +27,6 @@ def extract_refs(lang, wikipedia_url):
     
     try:
 
-        # Get HTML content for reference counting
         parse_params = {
             "action": "parse",
             "page": title,
@@ -39,19 +38,17 @@ def extract_refs(lang, wikipedia_url):
         res_html = requests.get(base_api_url, params=parse_params, timeout=5).json()
         html = res_html.get("parse", {}).get("text", {}).get("*", "")
 
-        # Count actual references in <ol class="references"> or <div class="references">
         soup = BeautifulSoup(html, 'html.parser')
         ref_container = soup.find(class_="references")
         if ref_container:
-            # We assume it's a list (usually <ol>), count how many <li> inside
+            # Assumiamo che sia una lista "li"
             return len(ref_container.find_all("li", recursive=False))
         else:
             return 0
-
         return 0
 
     except requests.exceptions.RequestException as e:
-        print(f"❌ Errore nella richiesta: {e} per link {wikipedia_url}")
+        print("Errore per link", wikipedia_url)
         return 0
     
 def extract_entity_id(url):
@@ -64,7 +61,6 @@ def process_entity(row, processed_keywords):
     if item in processed_keywords:
         return None
 
-    #print(f"⚙️ Processando '{item}'")
     results = [item, ""]
     ref_distribution = []
 
@@ -89,12 +85,11 @@ def process_entity(row, processed_keywords):
 
 def save_wikipedia_text_parallel(file_name):
     output_file_name = "wikipedia_references_stats_" + file_name
-
     # Carica keyword già trattate
     if os.path.exists(output_file_name):
         existing_df = pd.read_csv(output_file_name)
         processed_keywords = existing_df['entity'].unique().tolist()
-        print(f"🌍 {len(processed_keywords)} keywords già trattate.")
+        print(len(processed_keywords), "keywords già trattate.")
     else:
         processed_keywords = []
         # Scriviamo l'header se il file non esiste
@@ -112,6 +107,7 @@ def save_wikipedia_text_parallel(file_name):
             for _, row in df.iterrows()
         }
 
+        #Barra di donwload
         for future in tqdm(as_completed(future_to_entity), total=len(future_to_entity)):
             result = future.result()
             if result:
@@ -120,7 +116,7 @@ def save_wikipedia_text_parallel(file_name):
                     writer = csv.writer(file)
                     writer.writerow(result)
 
-    print(f"✅ Processamento completato. Risultati salvati in '{output_file_name}'.")
+    print("Processo completato")
 
 
 #entity, engtext, distribution, std, avg
